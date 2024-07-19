@@ -25,12 +25,10 @@ const Cart = () => {
           <li key={item.id}>
             {item.name} - ${item.price} x {item.quantity}
             <button onClick={() => handleRemoveItem(item.id)}>Remove</button>
-           
+            <button onClick={() => handleAddItem(item)}>Add Product 1</button>
           </li>
         ))}
       </ul>
-      <button onClick={() => handleAddItem({ id: 'p1', name: 'Product 1', price: 10 })}>Add Product 1</button>
-      <button onClick={() => handleAddItem({ id: 'p2', name: 'Product 2', price: 15 })}>Add Product 2</button>
     </div>
   );
 };
